@@ -1,11 +1,23 @@
 import { createStore } from 'vuex'
 
 export default createStore({
-  state: {
+  state:{
+    titles: []
   },
-  mutations: {
+  getters:{
+    totalTitles(state) {
+          return state.titles.length;
+      }
   },
-  actions: {
+  mutations:{
+      SAVE_TITLE(state,title) {
+          state.titles.push(title);
+      }
+  },
+  actions:{
+    saveTitle({commit}, title) {
+          commit('SAVE_TITLE',title);
+      }
   },
   modules: {
   }
