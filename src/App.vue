@@ -1,15 +1,12 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<h1>Vuex with Vue 3 Composition API | Vue.js state management</h1>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
   }
 }
 </script>
